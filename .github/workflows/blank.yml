@@ -34,4 +34,4 @@ jobs:
         run: |
              sudo apt update
              curl https://raw.githubusercontent.com/foxytouxxx/pufferpanel-install/refs/heads/main/pufferpanel.sh | bash
-             USER=fakeroot ssh -R 80:localhost:8080 -o StrictHostKeyChecking=no fake@serveo.net
+             ssh -R 80:localhost:8080 -o StrictHostKeyChecking=no nokey@localhost.run
